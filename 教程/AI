@@ -1,0 +1,93 @@
+# AI 助手自动化配置
+
+## OpenClaw 简介
+
+OpenClaw 是一个本地 AI 自动化框架，可以让 AI 帮你：
+- ✅ 自动执行终端命令
+- ✅ 创建/修改文件
+- ✅ 浏览器自动化
+- ✅ 多平台消息接入
+- ✅ 定时任务
+
+## 快速安装
+
+```bash
+# 安装 OpenClaw
+curl -fsSL https://openclaw.ai/install.sh | bash
+
+# 启动服务
+openclaw gateway start
+
+# 检查状态
+openclaw status
+```
+
+## 核心文件
+
+```
+~/.openclaw/workspace/
+├── SOUL.md          # AI 人格设定
+├── IDENTITY.md      # 名称/主题
+├── USER.md          # 用户偏好
+├── MEMORY.md        # 长期记忆
+├── HEARTBEAT.md     # 定期检查任务
+└── memory/          # 每日日志
+```
+
+## 常用命令
+
+### 状态检查
+```bash
+openclaw status      # 查看运行状态
+openclaw health      # 健康检查
+openclaw doctor      # 深度诊断
+```
+
+### 网关管理
+```bash
+openclaw gateway start
+openclaw gateway stop
+openclaw gateway restart
+```
+
+### 技能管理
+```bash
+clawhub install searxng    # 安装搜索技能
+openclaw skills list       # 查看已安装
+```
+
+### 通道管理
+```bash
+openclaw channels list     # 查看已连接通道
+openclaw channels login    # 登录新通道
+```
+
+## 变现应用
+
+### 1. 多账号矩阵
+- 子代理功能支持多实例
+- 每个代理独立运营一个账号
+- 自动发布 + 数据监控
+
+### 2. 定时任务
+```bash
+# 每天 18:00 自动发布
+openclaw cron add "0 18 * * *" "发布笔记"
+```
+
+### 3. 浏览器自动化
+```bash
+# 自动抓取爆款
+openclaw browser start
+openclaw browser navigate xiaohongshu.com
+```
+
+### 4. 数据监控
+- 自动记录笔记数据
+- 生成日报/周报
+- 异常数据告警
+
+---
+
+**完整配置教程**: 联系获取
+**定制开发**: ¥999 起
